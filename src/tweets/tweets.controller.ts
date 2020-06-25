@@ -2,8 +2,12 @@ import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 import { TweetsService } from './tweets.service';
 
 interface Tweet {
-    id: string,
-    name: string
+  id: string,
+  first_name: string,
+  last_name: string,
+  email: string,
+  gender: string,
+  stock: string
 }
 
 @Controller('tweets')
